@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My CV - Ashar Amir</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+    body {
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+    }
+
+    .cv-container {
+        background: white;
+        padding: 40px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        display: none; /* Hide pages initially */
+    }
+
+    .cv-container.active {
+        display: block; /* Show active page */
+    }
+
+    h1 { color: #0d6efd; font-weight: bold; }
+    .section-title { border-bottom: 2px solid #0d6efd; margin-top: 30px; margin-bottom: 15px; padding-bottom: 5px; }
+    footer { margin-top: 30px; text-align: center; color: gray; }
+    .badge-custom { font-size: 0.9rem; margin-right: 5px; }
+    .card-small { box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 15px; }
+
+    .nav-buttons { text-align: center; margin-top: 20px; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ===== Page 1 ===== -->
+    <div class="cv-container active" id="page1">
+
+        <div class="text-center mb-4">
+            <h1>Ashar Amir</h1>
+            <p>📧 23pwcse2326@uetpeshawar.edu.pk | 📞 03126946466 | 🌍 Pakistan</p>
+            <p>💻 <a href="#" target="_blank">GitHub</a> | 🔗 <a href="#" target="_blank">LinkedIn</a></p>
+        </div>
+
+        <h3 class="section-title">Career Objective</h3>
+        <p>To obtain a challenging position in Computer Engineering where I can apply my knowledge of programming, IoT, and mobile app development.</p>
+
+        <h3 class="section-title">Education</h3>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="card card-small">
+                    <div class="card-body">
+                        <h5 class="card-title">Bachelor of Computer System Engineering</h5>
+                        <p class="card-text mb-0">UET Peshawar</p>
+                        <small>2023 - Present</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card card-small">
+                    <div class="card-body">
+                        <h5 class="card-title">Intermediate (Pre-Engineering)</h5>
+                        <p class="card-text mb-0">PMDC Peshawar</p>
+                        <small>2020 - 2022</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="section-title">Certifications & Courses</h3>
+        <ul>
+            <li>Flutter Development - Coursera</li>
+            <li>Arduino IoT Workshop</li>
+            <li>Data Structures & Algorithms - FreeCodeCamp</li>
+        </ul>
+
+        <div class="nav-buttons">
+            <button class="btn btn-primary" onclick="nextPage()">Next →</button>
+        </div>
+
+    </div>
+
+    <!-- ===== Page 2 ===== -->
+    <div class="cv-container" id="page2">
+
+        <h3 class="section-title">Technical Skills</h3>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <ul class="list-group">
+                    <li class="list-group-item">C Programming</li>
+                    <li class="list-group-item">C++ (OOP)</li>
+                    <li class="list-group-item">HTML5 / CSS3 / JS</li>
+                </ul>
+            </div>
+            <div class="col-md-6 mb-3">
+                <ul class="list-group">
+                    <li class="list-group-item">Flutter (Beginner)</li>
+                    <li class="list-group-item">Arduino & IoT Projects</li>
+                
+                </ul>
+            </div>
+        </div>
+
+        <h3 class="section-title">Projects</h3>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="card card-small">
+                    <div class="card-body">
+                        <h5 class="card-title">Bluetooth Controlled Robot Car</h5>
+                        <p class="card-text">Controlled via mobile app, implemented PWM motor control and obstacle detection.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card card-small">
+                    <div class="card-body">
+                        <h5 class="card-title">Task Scheduler in C</h5>
+                        <p class="card-text">Implemented FCFS, Priority, and Round Robin scheduling algorithms with performance analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="section-title">Academic Projects & Online Courses</h3>
+        <ul>
+            <li>Pokémon Game in Flutter (Mobile App Development project)</li>
+            <li>Digital Logic Design – Logic Circuits & Simulations</li>
+            <li>Arduino Mini Projects – Smart Sensors & Robotics</li>
+            
+        </ul>
+
+        <div class="nav-buttons">
+            <button class="btn btn-secondary" onclick="prevPage()">← Previous</button>
+            <button class="btn btn-primary" onclick="nextPage()">Next →</button>
+        </div>
+
+    </div>
+
+    <!-- ===== Page 3 ===== -->
+    <div class="cv-container" id="page3">
+
+        <h3 class="section-title">Languages</h3>
+        <div class="mb-3">
+            <span class="badge bg-primary badge-custom">English</span>
+            <span class="badge bg-secondary badge-custom">Urdu</span>
+        </div>
+
+        <h3 class="section-title">Hobbies & Interests</h3>
+        <ul>
+            <li>Learning new technologies</li>
+            <li>Mobile app development</li>
+            <li>Building hardware projects</li>
+        </ul>
+
+        <h3 class="section-title">References</h3>
+        <p>Available upon request</p>
+
+        <div class="nav-buttons">
+            <button class="btn btn-secondary" onclick="prevPage()">← Previous</button>
+        </div>
+
+        <footer>
+            <p>© 2026 Ashar Amir. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    const pages = ["page1", "page2", "page3"];
+    let currentPage = 0;
+
+    function showPage(index) {
+        pages.forEach((id, i) => {
+            document.getElementById(id).classList.remove("active");
+        });
+        document.getElementById(pages[index]).classList.add("active");
+    }
+
+    function nextPage() {
+        if (currentPage < pages.length - 1) {
+            currentPage++;
+            showPage(currentPage);
+        }
+    }
+
+    function prevPage() {
+        if (currentPage > 0) {
+            currentPage--;
+            showPage(currentPage);
+        }
+    }
+</script>
+
+</body>
+</html>
